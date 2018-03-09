@@ -145,7 +145,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onPatientReportSelected(PatientModel patientModel) {
-
+        PatientInfoFragment patientInfoFragment = new PatientInfoFragment();
+        patientInfoFragment.setCurrentPatientModel(patientModel);
+        replaceFragment(patientInfoFragment, PatientInfoFragment.class.getSimpleName());
     }
 
     public void onAddNewPatient() {

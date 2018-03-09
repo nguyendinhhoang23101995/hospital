@@ -2,50 +2,27 @@ package android.hospital.entities.patient;
 
 import com.google.gson.Gson;
 
-import java.util.ArrayList;
-
 /**
  * Created by logan on 07/03/2018.
  */
 
 public class PatientModel {
-    protected Integer doctor_id;
-    protected String name;
+    protected Integer id;
     protected String code;
-    protected String birth_day;
-    protected String gender;
+    protected String name;
+    protected String email;
+    protected String password;
+    protected String phone;
+    protected Integer doctor_id;
+    protected String birthday;
+    protected Integer gender;
+    protected Integer room_id;
     protected String additional_info;
-    protected String room;
+    protected Integer major_id;
     protected String main_disease;
     protected String additional_disease;
     protected String created_at;
     protected String end_at;
-    protected ArrayList<PatientDailyReportModel> daily_report;
-    protected String update_at;
-
-    public PatientModel() {
-
-    }
-
-    public PatientModel(String name, String code, String birth_day, String gender, String additional_info, String room, String main_disease, String additional_disease, String created_at) {
-        this.name = name;
-        this.code = code;
-        this.birth_day = birth_day;
-        this.gender = gender;
-        this.additional_info = additional_info;
-        this.room = room;
-        this.main_disease = main_disease;
-        this.additional_disease = additional_disease;
-        this.created_at = created_at;
-    }
-
-    public Integer getDoctorId() {
-        return doctor_id;
-    }
-
-    public void setDoctorId(Integer doctor_id) {
-        this.doctor_id = doctor_id;
-    }
 
     public String getName() {
         return name;
@@ -53,6 +30,14 @@ public class PatientModel {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getCode() {
@@ -63,20 +48,60 @@ public class PatientModel {
         this.code = code;
     }
 
-    public String getBirthDay() {
-        return birth_day;
+    public String getEmail() {
+        return email;
     }
 
-    public void setBirthDay(String birth_day) {
-        this.birth_day = birth_day;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getGender() {
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public Integer getDoctorId() {
+        return doctor_id;
+    }
+
+    public void setDoctorId(Integer doctor_id) {
+        this.doctor_id = doctor_id;
+    }
+
+    public String getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
+    }
+
+    public Integer getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(Integer gender) {
         this.gender = gender;
+    }
+
+    public Integer getRoomId() {
+        return room_id;
+    }
+
+    public void setRoomId(Integer room_id) {
+        this.room_id = room_id;
     }
 
     public String getAdditionalInfo() {
@@ -87,12 +112,12 @@ public class PatientModel {
         this.additional_info = additional_info;
     }
 
-    public String getRoom() {
-        return room;
+    public Integer getMajorId() {
+        return major_id;
     }
 
-    public void setRoom(String room) {
-        this.room = room;
+    public void setMajorId(Integer major_id) {
+        this.major_id = major_id;
     }
 
     public String getMainDisease() {
@@ -125,22 +150,6 @@ public class PatientModel {
 
     public void setEndAt(String end_at) {
         this.end_at = end_at;
-    }
-
-    public ArrayList<PatientDailyReportModel> getDailyReport() {
-        return daily_report;
-    }
-
-    public void setDailyReport(ArrayList<PatientDailyReportModel> daily_report) {
-        this.daily_report = daily_report;
-    }
-
-    public String getUpdateAt() {
-        return update_at;
-    }
-
-    public void setUpdateAt(String update_at) {
-        this.update_at = update_at;
     }
 
     public String toJson() {

@@ -112,6 +112,21 @@ public class MyUtils {
         return result;
     }
 
+    public static String convertTimeToDisplayTextDMY(String date) {
+        String result = "**_**_****";
+        if (date != null && !date.equals("")) {
+            try {
+                SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss", Locale.ENGLISH);
+                Date parsedDate = inputFormat.parse(date);
+                result = new SimpleDateFormat("dd_MM_yyyy").format(parsedDate);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }
+        return result;
+    }
+
+
     public static String convertTimeToDisplayTextHI(String date) {
         String result = "**:** **";
         if (date != null && !date.equals("")) {

@@ -44,7 +44,7 @@ public class PatientRecyclerViewAdapter extends RecyclerView.Adapter<PatientRecy
         final PatientModel patientModel = patientModels.get(position);
         holder.patient_name.setText(patientModel.getName());
         holder.patient_code.setText(patientModel.getCode());
-        holder.patient_birth_day.setText(MyUtils.convertTimeToDisplayTextMDY(patientModel.getBirthDay()));
+        holder.patient_birth_day.setText(MyUtils.convertTimeToDisplayTextMDY(patientModel.getBirthday()));
         holder.patient_update_info.setOnClickListener(new OnSingleClickListener() {
             @Override
             public void onSingleClick(View view) {

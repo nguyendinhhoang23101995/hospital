@@ -66,9 +66,9 @@ public class PatientInfoFragment extends Fragment {
                     currentPatientModel.setCode(patient_code.getText().toString());
                 }
                 currentPatientModel.setName(patient_name.getText().toString());
-                currentPatientModel.setBirthDay(patient_birth_day.getText().toString());
-                currentPatientModel.setGender(patient_gender.getText().toString());
-                currentPatientModel.setRoom(patient_room.getText().toString());
+                currentPatientModel.setBirthday(patient_birth_day.getText().toString());
+                currentPatientModel.setGender(Integer.parseInt(patient_gender.getText().toString()));
+                currentPatientModel.setRoomId(Integer.parseInt(patient_room.getText().toString()));
                 currentPatientModel.setMainDisease(patient_main_diseases.getText().toString());
                 currentPatientModel.setAdditionalDisease(patient_additional_diseases.getText().toString());
                 dbPatientViewModel.insertPatient(currentPatientModel);
@@ -84,11 +84,11 @@ public class PatientInfoFragment extends Fragment {
         if (currentPatientModel.getName() != null) {
             patient_name.setText(currentPatientModel.getName());
         }
-        if (currentPatientModel.getBirthDay() != null) {
-            patient_birth_day.setText(currentPatientModel.getBirthDay());
+        if (currentPatientModel.getBirthday() != null) {
+            patient_birth_day.setText(currentPatientModel.getBirthday());
         }
-        if (currentPatientModel.getRoom() != null) {
-            patient_room.setText(currentPatientModel.getRoom());
+        if (currentPatientModel.getRoomId() != null) {
+            patient_room.setText(currentPatientModel.getRoomId());
         }
         if (currentPatientModel.getGender() != null) {
             patient_gender.setText(currentPatientModel.getGender());

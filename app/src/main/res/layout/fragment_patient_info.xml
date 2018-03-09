@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_bottom"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Patient Code" />
+
+            <android.hospital.lib.edittext.MyCustomEditText
+                android:id="@+id/patient_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Code"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/grey_lighter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+
+            <android.hospital.lib.edittext.MyCustomEditText
+                android:id="@+id/patient_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Name"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="test 1"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/grey_lighter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Birthday" />
+
+            <android.hospital.lib.edittext.MyCustomEditText
+                android:id="@+id/patient_birth_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Birthday"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="2018-02-02 03:00:08"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/grey_lighter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender" />
+
+            <android.hospital.lib.edittext.MyCustomEditText
+                android:id="@+id/patient_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="gender"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="Male"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/grey_lighter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Room" />
+
+            <android.hospital.lib.edittext.MyCustomEditText
+                android:id="@+id/patient_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Room"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="103"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/grey_lighter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Main Diseases" />
+
+            <android.hospital.lib.edittext.MyCustomEditText
+                android:id="@+id/patient_main_diseases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Main Diseases"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="Dau Bung"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/grey_lighter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Additional Diseases" />
+
+            <android.hospital.lib.edittext.MyCustomEditText
+                android:id="@+id/patient_additional_diseases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Additional Diseases"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="Tieu Duong"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/grey_lighter" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+
+        <TextView
+            android:id="@+id/apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/white_in_grey_corner_button_background"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Apply" />
+    </LinearLayout>
+</RelativeLayout>

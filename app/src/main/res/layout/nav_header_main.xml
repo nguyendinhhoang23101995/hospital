@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_active_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nav_customer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:paddingLeft="40dp"
+                        android:paddingTop="10dp"
+                        android:text="Doctor 1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/nav_customer_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="40dp"
+                        android:text="logan@gmail.com"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/nav_layout_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/ripple_grey_bell_button_select_background"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/bell" />
+
+                        <TextView
+                            android:id="@+id/nav_layout_notification_count"
+                            android:layout_width="20dp"
+                            android:layout_height="19dp"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginLeft="13dp"
+                            android:background="@drawable/badge_oval"
+                            android:gravity="center"
+                            android:minWidth="17sp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:paddingTop="2dp"
+                            android:text="4"
+                            android:textColor="#fff"
+                            android:textSize="10sp"
+                            android:visibility="visible" />
+
+                        <ProgressBar
+                            android:id="@+id/nav_layout_notification_progress"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginLeft="13dp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/grey_lighter" />
+
+            <TextView
+                android:id="@+id/nav_patient_management"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="40dp"
+                android:paddingTop="10dp"
+                android:text="Patient management"
+                android:textColor="@color/grey" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
